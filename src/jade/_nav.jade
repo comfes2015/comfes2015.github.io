@@ -1,0 +1,13 @@
+// navigation bar
+div.navbar.navbar-inverse.navbar-static-top
+  div.container
+    div.navbar-header
+      a.navbar-brand(href="/") Comfes2015
+    nav.collapse.navbar-collapse.bs-navbar-collapse
+      ul.nav.navbar-nav
+        li(class=title=='Home'?'active':undefined): a(href="/") Home
+        li(class=title=='News'?'active':undefined): a(href="/news") News
+        li(class=title=='About'?'active':undefined): a(href="/about") About
+        li(class=title=='Schedule'?'active':undefined): a(href="/schedule") Schedule
+        li(class=title=='Access'?'active':undefined): a(href="/access") Access
+        li(class=title=='Result'?'active':undefined): a(href="/result") Result

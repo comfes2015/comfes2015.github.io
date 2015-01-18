@@ -1,0 +1,11 @@
+// main
+main
+  header
+    div.jumbotron
+      div.container
+        div.text-center
+          - var main_title = title == 'Home' ? 'Comfes2015 in Matsue' : title
+          h1 #{main_title}
+  article
+    div.container
+      yield

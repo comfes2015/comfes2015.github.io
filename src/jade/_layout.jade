@@ -1,0 +1,20 @@
+doctype html
+
+
+html(lang="ja")
+  head
+    block vars
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatoble", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    // Bootstrap
+    link(href="/css/bootstrap.min.css", rel="stylesheet")
+    title #{title} | Comfes2015
+  body
+    include _header
+
+    include _main
+      block article
+
+    include _footer
