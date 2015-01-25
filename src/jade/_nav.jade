@@ -1,13 +1,19 @@
 // navigation bar
-div.navbar.navbar-inverse.navbar-static-top
-  div.container
+nav.navbar.navbar-inverse.navbar-fixed-top
+  div.container-fluid
     div.navbar-header
+      button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
       a.navbar-brand(href="/") Comfes2015
-    nav.collapse.navbar-collapse.bs-navbar-collapse
+    div#navbar.navbar-collapse.collapse
       ul.nav.navbar-nav
-        li(class=title=='Home'?'active':undefined): a(href="/") Home
-        li(class=title=='News'?'active':undefined): a(href="/news") News
-        li(class=title=='About'?'active':undefined): a(href="/about") About
-        li(class=title=='Schedule'?'active':undefined): a(href="/schedule") Schedule
-        li(class=title=='Access'?'active':undefined): a(href="/access") Access
-        li(class=title=='Result'?'active':undefined): a(href="/result") Result
+        li(class=title=='トップ'?'active':undefined): a(href="/") トップ
+        li(class=title=='新着'?'active':undefined): a(href="/news") 新着
+        li(class=title=='開催概要'?'active':undefined): a(href="/about") 開催概要
+        li(class=title=='日程'?'active':undefined): a(href="/schedule") 日程
+        li(class=title=='アクセス'?'active':undefined): a(href="/access") アクセス
+        li(class=title=='結果'?'active':undefined): a(href="/result") 結果
