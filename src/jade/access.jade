@@ -1,7 +1,35 @@
-
 extends _layout
 
 block vars
-  - var title= 'Access'
+  - var title= 'アクセス'
 
 block article
+  div.row
+    div.col-md-10.col-md-offset-1
+      h2 開催場所
+      table.table.table-responsive
+        tbody
+          tr
+            th.col-md-3 部長会議
+            td.col-md-7 松江テルサ研修室2 (松江テルサ4F)
+          tr
+            th 本祭
+            td 松江工業高等専門学校 大講義室
+          tr
+            th 情報交換会
+            td 松江テルサ大会議室 (松江テルサ4F)
+
+
+      h2 会場アクセス
+      table.table.table-responsive
+        tbody
+          tr
+            th.col-md-3 松江テルサ
+            td.col-md-7 
+               |松江市朝日町478-18  
+               a(target="_blank", href="https://www.google.co.jp/maps/place/ゆうちょ銀行広島支店松江テルサ内出張所") google maps
+          tr
+            th.col-md-3 松江工業高等専門学校
+            td.col-md-7 
+               |松江市西生馬町14−4  
+               a(target="_blank", href="https://www.google.co.jp/maps/place/松江工業高等専門学校") google maps
