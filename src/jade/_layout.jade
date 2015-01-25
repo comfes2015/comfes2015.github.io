@@ -10,11 +10,16 @@ html(lang="ja")
 
     // Bootstrap
     link(href="/css/bootstrap.min.css", rel="stylesheet")
+    link(href="/css/comfes2015.css", rel="stylesheet")
     title #{title} | Comfes2015
   body
-    include _header
+    include _header 
 
     include _main
       block article
 
     include _footer
+    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(src="/js/bootstrap.min.js")
+
