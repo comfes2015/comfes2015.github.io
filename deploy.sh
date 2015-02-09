@@ -1,3 +1,4 @@
+mkdir dist
 cd dist
 mkdir about
 mkdir news
