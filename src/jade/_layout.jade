@@ -11,7 +11,12 @@ html(lang="ja")
     // Bootstrap
     link(href="/css/bootstrap.min.css", rel="stylesheet")
     link(href="/css/comfes2015.css", rel="stylesheet")
-    title #{title} | Comfes2015
+    - if (title == "トップ") {
+      title comfes2015
+    - } else {
+      title #{title} | Comfes2015
+    - }
+
   body
     include _header 
 
