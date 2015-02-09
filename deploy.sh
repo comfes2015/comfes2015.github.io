@@ -7,8 +7,8 @@ mkdir schedule
 mkdir result
 
 cd ..
-cp -r css dist/css
-cp -r js  dist/js
+cp -r css dist/
+cp -r js  dist/
 
 cd src/jade
 jade --pretty news.jade home.jade access.jade schedule.jade about.jade result.jade
