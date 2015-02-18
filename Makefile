@@ -1,5 +1,5 @@
-SRC  := src
-DEST := dist_test
+SRC  := jade
+DEST := dist
 
 FILES := $(shell find $(SRC) -type f -regex '.*/[^_]*')
 JADE := $(filter %.jade,$(FILES))
